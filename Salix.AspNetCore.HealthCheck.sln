@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33209.295
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Salix.AspNetCore.HealthCheck", "Source\Salix.AspNetCore.HealthCheck\Salix.AspNetCore.HealthCheck.csproj", "{4F418AB9-5819-4833-9B61-A2A22E45BDFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salix.AspNetCore.HealthCheck.Tests", "Source\Salix.AspNetCore.HealthCheck.Tests\Salix.AspNetCore.HealthCheck.Tests.csproj", "{7FB03ED1-FC38-4C25-B8DD-A04641E80E66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F418AB9-5819-4833-9B61-A2A22E45BDFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F418AB9-5819-4833-9B61-A2A22E45BDFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F418AB9-5819-4833-9B61-A2A22E45BDFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F418AB9-5819-4833-9B61-A2A22E45BDFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB03ED1-FC38-4C25-B8DD-A04641E80E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB03ED1-FC38-4C25-B8DD-A04641E80E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB03ED1-FC38-4C25-B8DD-A04641E80E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB03ED1-FC38-4C25-B8DD-A04641E80E66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {476CD60A-5DF3-484E-8B55-AD9FBF076EF7}
+	EndGlobalSection
+EndGlobal
