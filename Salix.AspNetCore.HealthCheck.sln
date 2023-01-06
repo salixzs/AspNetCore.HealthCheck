@@ -7,6 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Salix.AspNetCore.HealthChec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salix.AspNetCore.HealthCheck.Tests", "Source\Salix.AspNetCore.HealthCheck.Tests\Salix.AspNetCore.HealthCheck.Tests.csproj", "{7FB03ED1-FC38-4C25-B8DD-A04641E80E66}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{3035D2AC-1DB0-425A-A98D-B96DD0FDE097}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		.github\workflows\build_test.yml = .github\workflows\build_test.yml
+		nuget_readme.md = nuget_readme.md
+		.github\workflows\publish_nuget.yml = .github\workflows\publish_nuget.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

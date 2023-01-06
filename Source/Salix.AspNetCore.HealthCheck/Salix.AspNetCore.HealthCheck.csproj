@@ -30,7 +30,9 @@
     <PackageProjectUrl>https://github.com/salixzs/AspNetCore.HealthCheck</PackageProjectUrl>
     <RepositoryUrl>https://github.com/salixzs/AspNetCore.HealthCheck</RepositoryUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <Description>
 Health check (for ASpNetCore) results formatter as JSON object and custom page to show these results in colorized human-readable format.
+    </Description>
     <PackageReleaseNotes>
 Initial: Moved from aspNetCore.Utilities meta-package.
     </PackageReleaseNotes>
@@ -63,6 +65,11 @@ Initial: Moved from aspNetCore.Utilities meta-package.
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PageHtml.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../utilities.png" Pack="true" Visible="false" PackagePath="" />
+    <None Include="../../nuget_readme.md" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
 
 </Project>

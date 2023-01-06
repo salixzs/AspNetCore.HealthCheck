@@ -83,7 +83,7 @@ namespace Salix.AspNetCore.HealthCheck.Tests
 
         private static HealthReport CreateHealthReport(bool addException)
         {
-            ApplicationException exc = null;
+            ApplicationException? exc = null;
             if (addException)
             {
                 try
