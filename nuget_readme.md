@@ -4,7 +4,7 @@ Package provides two functionalities for AspNet (Core) APIs:
 - Custom formatter of health check results as JSON object (default response is plain-text)
 - Page, displaying health check results in humanly readable format in colors.
 
-## JSON fomatter
+## JSON formatter
 
 Returns all defined health checks as JSOn object with implemented details and error handling (exception details).\
 Example response:

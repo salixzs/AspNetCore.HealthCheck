@@ -10,13 +10,16 @@ namespace Salix.AspNetCore.HealthCheck;
 /// </summary>
 public static class HealthCheckFormatter
 {
+    private static readonly JsonSerializerOptions JsonSerializerOptions =
+        new() { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, WriteIndented = true };
+
     /// <summary>
     /// Transforms HealthCheck report into customized JSON string with all included information.
     /// </summary>
     /// <param name="context">The HTTP context where response needs to be written to.</param>
     /// <param name="report">The Health report itself.</param>
     /// <param name="isDevelopment">
-    /// When true, might include information, which is dangerous for public, but valuable in development/testing.
+    /// When true, might include information, which is dangerous for public use, but valuable in development/testing.
     /// When false - will not show added Data, Stack trace etc.
     /// </param>
     /// <exception cref="ArgumentNullException"><paramref name="context"/> is <c>null</c>.</exception>
@@ -43,7 +46,7 @@ public static class HealthCheckFormatter
                     }),
                 }),
             },
-            new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, WriteIndented = true });
+            JsonSerializerOptions);
         }
 
         context.Response.ContentType = "application/json";

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 namespace Salix.AspNetCore.HealthCheck;
 
 /// <summary>
-/// Registers Helth checks with Json Response formatter.
+/// Registers Health checks with Json Response formatter.
 /// </summary>
 public static class HealthCheckConfigExtensions
 {
@@ -17,13 +17,13 @@ public static class HealthCheckConfigExtensions
     /// </summary>
     /// <param name="app">Application object builder.</param>
     /// <param name="path">
-    /// Relative Path where Healt result is provided.
+    /// Relative Path where Health result is provided.
     /// <code>
     /// app.UseJsonHealthChecks("/api/health");
     /// </code>
     /// </param>
     /// <param name="isDevelopment">
-    /// Controls some data to be hidden when this is false (non-deveopment environment: production).
+    /// Controls some data to be hidden when this is false (non-development environment: production).
     /// <code>
     /// app.UseJsonHealthChecks("/api/health", builder.Environment.IsDevelopment());
     /// </code>
